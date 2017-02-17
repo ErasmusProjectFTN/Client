@@ -1,0 +1,98 @@
+<div>
+<div class="col-md-4 col-md-offset-4">
+    <h3>PERSONAL INFORMATION</h3>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Family name: </span>
+    <input type="text" class="form-control" placeholder="Enter your family name" ng-model="familyname"/>
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Given name: </span>
+    <input type="text" class="form-control" placeholder="Enter your given name" ng-model="givenname"/>
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Date of birth: </span>
+    <input type="date" class="form-control"  ng-model="dateofbirth"/>
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Country of birth </span>
+    <input type="text" class="form-control"  ng-model="countryofbirth"/>
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Place of birth </span>
+    <input type="text" class="form-control"  ng-model="placeofbirth"/>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Gender </span>
+    <select  class="form-control"  ng-model="genderSelected">
+        <option ng-repeat="option in gender" value="{{option.value}}">{{option.text}}</option>
+    </select>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Nationality(1) </span>
+    <select  class="form-control"  ng-model="nationality1"/>
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Nationality(2) </span>
+    <select  class="form-control"  ng-model="nationality2"/>
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> Surname/Name for postal address: </span>
+    <input  class="form-control"  ng-model="surname"/>
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> (c/o) (optional):</span>
+    <input  class="form-control"  ng-model="cooptional"/>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> Street/nr:</span>
+    <input  class="form-control"  ng-model="street"/>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> Postal code:</span>
+    <input  class="form-control"  ng-model="postalcode"/>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> City: </span>
+    <input  class="form-control"  ng-model="city"/>
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> Country: </span>
+    <select  class="form-control"  ng-model="country"/>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> Telephone(incl. country code): </span>
+    <input  class="form-control"  ng-model="country"/>
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> e-mail: </span>
+    <input  class="form-control" type="email" ng-model="mail"/>
+  </div>
+  
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1"> Select the option that is applicable to you:</span>
+    <select  class="form-control" type="email" ng-model="optionfornoneu"/>
+  </div>
+  
+
+<div class="col-md-4 col-md-offset-4">
+  <button class="btn btn-primary" type="button" ng-click="signup()">
+    Next
+  </button>
+
+</div>
+</div>
+</div>

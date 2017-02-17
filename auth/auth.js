@@ -4,6 +4,19 @@ angular.module('wsapp')
     .config(function ($stateProvider) {
         $stateProvider
     $stateProvider
+           .state('personal', {
+                   url: '/personal',
+                   views: {
+                       'content': {
+                           templateUrl: 'auth/signup/personal.html',
+                           controller: 'PersonalController'
+                       },
+                       'navbar':{
+                           templateUrl: 'navbar/navbar.html',
+                           controller: 'NavbarController'
+                       }
+                   }
+               })  
            .state('signup', {
                    url: '/signup',
                    views: {
