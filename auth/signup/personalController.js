@@ -201,7 +201,24 @@ angular.module('wsapp')
    "Zambian",
    "Zimbabwean"
 ]
-    // $scope.personalization(){
+    //alertify.success("next");
 
-    // }
+        authService.personalization($scope.data.familyname,$scope.data.givenname,$scope.data.dateofbirth,$scope.data.countryofbirth,$scope.data.placeofbirth,$scope.data.selectedOption,$scope.data.nationality1,$scope.street,$scope.postalcode,$scope.city,$scope.country,$scope.telephone,$scope.mail,
+        			   function(response){
+
+        				   console.log(response.data);
+        				   //if(response.data.success==true){
+        				   	alertify.success("WELCOME!");
+        				   	$state.go('home');
+        				   //}else{
+        				   	//alertify.error("ERROR");
+        				   //}
+
+        			   }
+        			   ,function(response){
+
+        					console.log(response.data);
+        					alertify.error("ERROR");
+
+        			   });
     });
